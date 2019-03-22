@@ -1,0 +1,126 @@
+html{
+    height: 100%;
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    font-size: px;
+    background-color: pink;
+}
+.boom{
+    background-color:black;
+    opacity: 0.8;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+.boom span{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 10rem;
+    color: white;
+    font-weight: bold;
+}
+.wrap{
+    display:flex;
+    width: 100%;
+    min-height: 100%;
+    background-color: aliceblue;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20rem;
+    background-color: yellow;
+    float: left;
+}
+.side span{
+    padding:0 2rem;
+    line-height: 8rem;
+    border: 5px solid #000;
+    /* background-color: pink; */
+    color: #000;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.side span:nth-child(2){
+    border-top: none;
+    border-bottom: none;
+}
+.side span:hover{
+    cursor: pointer;
+}
+.main{
+    flex-grow:1; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.main .top span{
+    line-height: 10rem;
+    padding: 1rem;
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 2rem;
+    font-size: 4rem;
+    font-weight:bold;
+}
+.main .top span:hover{
+    cursor: pointer;
+}
+.main .num{
+    font-size: 4rem;
+    /* font-weight: bold; */
+}
+.main .num span{
+    line-height: 10rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.main .top,
+.main .num{
+    flex-grow: 0;
+}
+.main .area{
+    /* border: 5px solid black; */
+    flex-grow: 1;
+
+}
+.area{
+    text-align: center;
+    
+}
+.content{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-top: 5px;
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+}
+.content li{
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    list-style: none;
+    width: 49px;
+    height: 49px;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    float: left;
+}
+.content li.bingo{
+    background-color: red;
+}
